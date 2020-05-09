@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel导入导出操作</title>
+</head>
+<body>
+    <br>
+    <div id="importBox">
+        <form id="importForm" action="/excel/import" method="post" enctype="multipart/form-data"
+              style="padding-left:20px;text-align:center;" target="_blank"><br/>
+            <input id="uploadFile" name="file" type="file" style="width:330px"/>导入文件不能超过5M，仅允许导入“xls”或“xlsx”格式文件！<br/>　　
+            <button id="btnImport" class="btn btn-info"><i class="fa fa-folder-open-o"></i> 导入</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <a href="/excel/export" target="_blank">导出Excel</a>
+    <br>
+    <a href="/excel/import/template" target="_blank">下载导入Excel模板</a>
+    <br>
+</body>
+</html>

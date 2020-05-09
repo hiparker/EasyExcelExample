@@ -1,0 +1,36 @@
+server:
+  port: 8081
+  tomcat:
+    uri-encoding: UTF-8
+    basedir: /Users/liugf
+    max-threads: 2000
+    min-spare-threads: 10
+    accesslog:
+      pattern: common
+      enabled: true
+      directory: logs
+      prefix: arcinbj_access_log
+      suffix: .log
+      request-attributes-enabled: true
+      rename-on-rotate: true
+logging:
+  level:
+    root: INFO
+    #    org.flowable: DEBUG
+    com.easyexcel: DEBUG
+spring:
+  servlet:
+    multipart:
+      maxFileSize:  1000MB
+      maxRequestSize: 1000MB
+  devtools:
+    restart:
+      enabled: true
+
+#============================#
+#===== System settings ======#
+#============================#
+
+#产品信息设置
+copyrightYear: 2019
+version: springboot2.0
